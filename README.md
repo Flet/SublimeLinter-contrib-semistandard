@@ -1,7 +1,7 @@
 SublimeLinter-contrib-semistandard
 ================================
 
-[![Build Status](https://travis-ci.org/Flet/SublimeLinter-contrib-semistandard.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-semistandard)
+[![Build Status](https://travis-ci.org/Flet/SublimeLinter-contrib-semistandard.svg?branch=master)](https://travis-ci.org/Flet/SublimeLinter-contrib-semistandard)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [semistandard](https://www.npmjs.com/package/semistandard). It will be used with files that have the “javascript” syntax.
 
