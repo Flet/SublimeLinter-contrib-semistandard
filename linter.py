@@ -21,7 +21,7 @@ class Semistandard(NodeLinter):
     cmd = 'semistandard'
     version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 2.3.1'
+    version_requirement = '>= 2.3.2'
     regex = r'^\s.+:(?P<line>\d+):(?P<col>\d+):(?P<message>.+)'
     selectors = {
         'html': 'source.js.embedded.html'

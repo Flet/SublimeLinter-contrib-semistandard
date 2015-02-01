@@ -23,7 +23,7 @@ Before using this plugin, you must ensure that `semistandard` is installed on yo
 1. If you are using `zsh` and `oh-my-zsh`, do not load the `nvm` plugin for `oh-my-zsh`.
 
 
-**Note:** This plugin requires `semistandard` 2.3.1 or later.
+**Note:** This plugin requires `semistandard` 2.3.2 or later.
 
 ### Linter configuration
 In order for `semistandard` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
