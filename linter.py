@@ -10,7 +10,7 @@
 
 """This module exports the Semistandard plugin class."""
 
-from SublimeLinter.lint import NodeLinter, util
+from SublimeLinter.lint import NodeLinter
 
 
 class Semistandard(NodeLinter):
