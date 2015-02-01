@@ -1,0 +1,10 @@
+SublimeLinter-contrib-semistandard
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to semistandard.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/Danny,,,/SublimeLinter-contrib-semistandard
