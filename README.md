@@ -39,6 +39,33 @@ To install via Package Control, do the following:
 
 1. When the plugin list appears, type `semistandard`. Among the entries you should see `SublimeLinter-contrib-semistandard`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
+## Automatic Formatting
+This can be accomplished via @bcomnes StandardFormat on package control.
+
+1) Make sure you have at least `semistandard` version 4.2.2... just update to the latest to be sure:
+```bash
+npm install semistandard -g
+```
+2) Install **StandardFormat** from package control
+3) Open the "user" package settings for "Standard Format"
+  - via command pallete: standard format settings user
+  - or via menu: Preference > Package Settings > Standard Format > Settings - User
+
+4) Add a reference to `semistandard -F --stdin`:
+```js
+{
+  // set this to false if you don't want to format on save
+  "format_on_save": true,
+  "command": ["semistandard", "-F", "--stdin"],
+}
+```
+5) Save the settings file.
+6) Restart Sublime Text.
+
+StandardFormat will also map <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F</kbd> to format automatically. :)
+
+
+
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
