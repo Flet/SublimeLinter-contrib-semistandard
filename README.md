@@ -42,21 +42,21 @@ To install via Package Control, do the following:
 ## Automatic Formatting
 This can be accomplished via @bcomnes StandardFormat on package control.
 
-1) Make sure you have at least `semistandard` version 4.2.2... just update to the latest to be sure:
+1) Make sure you have at least `semistandard-format`, just update to the latest to be sure:
 ```bash
-npm install semistandard -g
+npm install semistandard-format -g
 ```
 2) Install **StandardFormat** from package control
 3) Open the "user" package settings for "Standard Format"
   - via command pallete: standard format settings user
   - or via menu: Preference > Package Settings > Standard Format > Settings - User
 
-4) Add a reference to `semistandard -F --stdin`:
+4) Add a reference to `semistandard-format --stdin`:
 ```js
 {
   // set this to false if you don't want to format on save
   "format_on_save": true,
-  "command": ["semistandard", "-F", "--stdin"],
+  "command": ["semistandard-format", "--stdin"],
 }
 ```
 5) Save the settings file.
