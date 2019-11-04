@@ -21,6 +21,3 @@ class Semistandard(NodeLinter):
     }
     cmd = 'semistandard --stdin --verbose'
     regex = r'^\s.+:(?P<line>\d+):(?P<col>\d+):(?P<message>.+)'
-    selectors = {
-        'html': 'source.js.embedded.html'
-    }
