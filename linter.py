@@ -1,23 +1,18 @@
-#
-# linter.py
-# Linter for SublimeLinter3, a code checking framework for Sublime Text 3
-#
-# Written by Dan Flettre
-# Copyright (c) 2015 Dan Flettre
-#
-# License: MIT
-#
-
-"""This module exports the Semistandard plugin class."""
-
 from SublimeLinter.lint import NodeLinter
 
 
 class Semistandard(NodeLinter):
-    """Provides an interface to semistandard."""
-
+    name = "semistandard"
+    cmd = "semistandard --stdin"
+    regex = r"^.+:(?P<line>\d+):(?P<col>\d+):\s*(?P<message>.+)"
+    multiline = True
     defaults = {
-        'selector': 'source.js, source.js.embedded.html, source.javascript, source.javascript.babel'
+        "selector": "source.js, source.jsx",
+        "disable_if_not_dependency": False,
     }
-    cmd = 'semistandard --stdin --verbose'
-    regex = r'^\s.+:(?P<line>\d+):(?P<col>\d+):(?P<message>.+)'
+
+    def run(self, cmd, code):
+        if not self.context.get("file"):
+            self.notify_failure()
+            return "-:1:1:The file must be saved before it can be linted by semistandard"
+        return super().run(cmd, code)
